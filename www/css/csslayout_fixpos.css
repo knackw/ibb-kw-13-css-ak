@@ -1,0 +1,36 @@
+#page{
+	background-color:#ddd;
+	position:relative;	/* absolut positioniertes Kindelement einfangen */
+}
+
+/* Kopfbereich */
+header{
+	background-color:#fae58f;
+	height:50px;
+}
+
+/* Navigation */
+nav{
+	background-color:#fad4ab;
+	position:absolute;
+	top:50px;
+	left:0px;
+	width:200px;
+}
+
+/* Inhalt */
+main{
+	background-color:#e1f4a7;
+	margin-left:200px;
+	padding-top:1px;
+	margin-bottom:70px;
+}
+
+/* Fussbereich */
+footer{
+	background-color:#8fbacd;
+	position:fixed;
+	width:100%;
+	bottom:0;
+	left:0;
+}

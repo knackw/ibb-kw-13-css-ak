@@ -1,0 +1,25 @@
+@font-face{
+	font-family:AlexBrush;
+	src:url("../fonts/AlexBrush.woff2") format("woff2"),
+		url("../fonts/AlexBrush.ttf") format("truetype");
+}
+body{
+	font-size: 100%;
+}
+h1{
+	font-family: AlexBrush, cursive;
+	font-size:5vw;
+}
+article{
+	/* column-width:200px;
+	column-count:3; */
+	columns:200px 3;
+	column-gap:3em;
+	column-rule:1px solid gray;
+}
+article h1{
+	column-span:all;
+}
+article p{
+	margin:0px;
+}

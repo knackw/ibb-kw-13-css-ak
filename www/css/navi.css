@@ -1,0 +1,41 @@
+#page{
+	width:950px;
+	margin:0px auto;			
+}
+header{
+	background:#FAE58F;	
+}
+
+nav{
+	background:#E1F4A7;	
+}
+nav ul{
+	list-style-type:none;
+	padding:0;
+}
+nav li{
+	width:150px;
+	border:1px solid gray;
+	display:inline-block;
+}
+nav li ul{
+	display:none;
+	position:absolute;
+}
+nav li:hover ul{
+	display:block;
+}
+main{
+	background:#8FBACD;		
+}
+img{
+	display:block;
+}
+aside{
+
+	background:#D0A7D0;			
+}
+footer{
+	background:#FAD4AB;
+		
+}

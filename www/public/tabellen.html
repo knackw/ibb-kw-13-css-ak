@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Tabellen</title>	
+		<meta charset="utf-8">			
+		<link rel="stylesheet" href="../css/tabellen.css">
+	</head>
+	<body>
+		<h1>Tabellen</h1>
+		
+		<table>
+			<caption>Tabellenüberschrift</caption>
+			<!-- table row = Tabellenzeile -->
+			<tr>
+				<!-- table header = Kopfzelle; fett und mittig -->
+				<th>Spaltenüberschrift 1</th>
+				<th>Spaltenüberschrift 2</th>
+			</tr>
+			<tr>
+				<!-- table date = Tabellenzelle; nicht fett und linksbündig -->
+				<td>Zelle 1</td>
+				<td>Zelle 2</td>
+			</tr>				
+			<tr>
+				<td>Zelle 3</td>
+				<td><img src="../bilder/ist.jpg" alt="arrow"></td>
+			</tr>			
+		</table>
+		
+		<hr>
+		<h2>logisch strukturierte Tabelle; freiwillig</h2>
+		<table>
+			<caption>Tabellenüberschrift</caption>
+			<!-- Tabelle in Spalten organisieren -->
+			<colgroup>	<!-- column group = Spaltengruppe span="2"-->
+				<col class="sp1">	<!-- column = Spalte -->
+				<col class="sp2">
+			</colgroup>
+			<!-- Tabellenkopf; optional, einmalig -->
+			<thead>
+				<tr>
+					<th>Spaltenüberschrift 1</th>
+					<th>Spaltenüberschrift 2</th>
+				</tr>
+			</thead>
+			<!-- Tabellenkörper, mehrmals -->
+			<tbody>
+				<tr>
+					<td>Zelle 1</td>
+					<td>Zelle 2</td>
+				</tr>				
+				<tr>
+					<td>Zelle 3</td>
+					<td>Zelle 4</td>
+				</tr>	
+			</tbody>
+			<!-- Tabellenfuss, optional, einmalig -->
+			<tfoot>
+				<tr>		
+					<td>Fusszelle 1</td>
+					<td>Fusszelle 2</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

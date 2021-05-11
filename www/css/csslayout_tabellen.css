@@ -1,0 +1,51 @@
+/* Universal-Selektor */
+*{
+	box-sizing: border-box;
+}
+#page{
+	background-color:#ddd;
+	width:90%;
+	margin:10px auto;
+	/* overflow:auto; */
+}
+
+
+/* Kopfbereich */
+header{
+	background-color:#fae58f;
+	padding:10px;
+}
+
+#tabelle{
+	display:table;
+}
+
+/* Navigation */
+nav{
+	background-color:#fad4ab;
+	width:30%;
+	padding:10px;
+	display:table-cell;
+}
+
+/* Inhalt */
+main{
+	background-color:#e1f4a7;
+	width:40%;
+	padding:10px;
+	display:table-cell;
+}
+
+/* Sidebar */
+aside{
+	background-color:#d0a7d0;
+	width:30%;
+	padding:10px;
+	display:table-cell;
+}
+
+/* Fussbereich */
+footer{
+	background-color:#8fbacd;
+	padding:10px;
+}

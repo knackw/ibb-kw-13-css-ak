@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Formular</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href=""/>
+	
+</head>
+<body>
+	
+	<p>	Ihre Aufgabe:</p>
+		<ul>
+			<li>Kommentieren Sie welcher Block wofür zu ständig ist. </li>
+			<li>Sortieren Sie die Teile in ein sinnhaftes Formular. </li>
+			<li>Korrigieren Sie die Fehler im Formular. </li>
+			<li>Beantworten Sie die folgenden Fragen: 
+				<ul>
+					<li>Welche Elemente stehen in HTML für Formulare zur Verfügung? </li>
+					<li>Wodurch werden Eingabefelder definiert? </li>
+					<li>Wodurch wird die Art des Eingabefeldes definiert?  </li>
+					<li>Welche Eingabefelder sehen Sie? (Mindestens 3) </li>
+					<li>Untersuchen Sie die Radiobutton und finden sie raus wie die Einfachauswahl funktioniert. </li>
+					<li> Was sind cols im Textfeld und welche Größenangabe gibt es noch?</li>
+					<li> Welche Auswahlfelder ausser den Radiobutton gibt es noch? Und wenn Sie Lust haben integrieren Sie ein Weiteres.</li>
+				</ul>
+			</li>
+		</ul>
+	
+	<form action="mailto:test@viona.com" method="post"> 
+		<fieldset>
+
+			<h2>Einen Termin machen:</h2>	
+
+			<div> 
+				<select>
+					<option value="Herr" selected="selected">Herr</option>
+					<option value="Frau">Frau</option>
+					<option value="Dr">Dr.</option>
+					<option value="Professor">Professor</option>
+				</select>
+			</div>
+			
+			<div> 
+				<input id="fon" type="text" size="40" title="nur Zahlen erlaubt"> 
+				<label for="fon">Telefonnummer</label>
+			</div>
+			
+			<div>
+				<input id="name" type="text" size="40" title="Name"> 
+				<p for="name"> Vor und Nachname</p> 
+			</div>
+			
+			<div> 
+				<input id="mail" type="email" size="40" title="beispiel@beispiel.org">
+				<label for="mail">E-Mail</label>
+			</div>
+			
+			<div> 
+				<input id="url" type="url" size="40" title="http://www.beispiel.org"/>
+				<label for="url"> Website </label>
+			</div>
+			<div> 
+				<input id="datum" type="text" size="10" title="TT.MM.JJJJ"/> um <input id="zeit" type="text" size="5" title="HH:MM"/>
+				<label for="datum">Datum und Uhrzeit </label>
+			</div>
+			<div> 
+				<label for="field6-1"> Wie möchten Sie kontaktiert werden: </label>
+					<div>
+						<input type="radio" name="field6"  value="SMS">
+						<span>SMS</span>
+					</div>
+					<div> 
+						<input type="radio" name="field6" value="Telefon">
+						<span>Telefon</span>
+					</div>
+					<div> 
+						<input type="radio" name="field6"  value="Mail">
+						<span>Mail</span>
+					</div>
+			</div>
+			
+			<div> 
+				<textarea id="nachricht" type="text" cols="60" title="Hinterlassen Sie eine Nachricht">
+				</textarea>
+			</div>
+			
+		</fieldset> 
+
+		<fieldset> 
+			<button type="submit"> Absenden </button> 
+			<button type="reset"> Zurück setzen</button> 
+		</fieldset> 
+		
+	</form>
+</body>
+</html>

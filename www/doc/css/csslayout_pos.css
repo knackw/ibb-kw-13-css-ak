@@ -1,0 +1,37 @@
+div{
+	background-color:silver;
+	border:1px solid gray;
+	width:500px;
+}
+#page{
+	background-color:maroon;
+	padding:50px;
+	margin:50px;
+}
+
+/* Position: static; Standard, normal im Textfluss  */
+#div1{
+	position:static;
+	left:40px;	/* unwirksam */
+}
+
+/* Position: relative; relative Positionierung aus dem normalen Textfluss; nachfolgende Inhalte werden nicht beeinflusst */
+#div2{
+	position:relative;
+	left:50px;
+	top:20px;
+}
+
+/* Position:absolute; absolute Positionierung ausserhalb des normalen Textfluss; orientiert sich am body; nachfolgende Inhalte nehmen keine Rücksicht auf diesen */
+#div4{
+	position:absolute;
+	top:30px;
+	left:30px;
+}
+
+/* Position: fixed; wie absolute; orientiert sich aber am viewport */
+#div6{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+}

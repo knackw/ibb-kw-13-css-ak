@@ -1,0 +1,42 @@
+#page{
+	background-color:#ddd;
+	width:90%;
+	margin:10px auto;
+	display:grid;
+	grid-template-rows:100px 1fr 50px;
+	grid-template-columns:25% 50% 25%;
+}
+
+/* Kopfbereich */
+header{
+	background-color:#fae58f;
+	padding:10px;
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+}
+
+/* Navigation */
+nav{
+	background-color:#fad4ab;
+	padding:10px;
+}
+
+/* Inhalt */
+main{
+	background-color:#e1f4a7;
+	padding:10px;
+}
+
+/* Sidebar */
+aside{
+	background-color:#d0a7d0;
+	padding:10px;
+}
+
+/* Fussbereich */
+footer{
+	background-color:#8fbacd;
+	padding:10px;
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}

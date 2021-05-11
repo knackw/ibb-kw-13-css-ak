@@ -1,0 +1,48 @@
+body{
+   font-family:sans-serif;
+   font-size:13px;
+   
+}
+#page{
+	width:950px;
+	margin:0px auto;			
+}
+header{
+	background:#FAE58F;	
+	overflow:auto;
+}
+h1{
+	margin-left:150px;
+}
+nav{
+	background:#E1F4A7;
+	float:left;
+	width:200px;
+	clear:both;			
+}
+main{
+	background:#8FBACD;
+	float: left;	
+	width: 530px;
+	padding:10px;			
+}
+aside{
+	float:left;
+	width:180px;
+	padding:10px;
+	background:#D0A7D0;			
+}
+footer{
+	background:#FAD4AB;
+	clear:left;			
+}
+a{
+	text-decoration:none;
+}
+img{
+	float:left;
+}
+address{
+	display:none;
+}
+

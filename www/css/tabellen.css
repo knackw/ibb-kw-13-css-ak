@@ -1,0 +1,29 @@
+table, td, th{
+	border: 1px solid gray;
+}
+table{
+	width:70%;
+	text-align:center;
+	margin:0px auto;
+	background-color:pink;
+	border-spacing:0px;
+	border-collapse:collapse;
+	
+}
+td img{
+	width:50%;
+}
+.sp1{
+	background-color:yellow;
+	width:200px;
+}
+.sp2{
+	background-color:silver;
+	
+}
+th{
+	height:50px;
+	vertical-align:bottom;
+	background-color:olive;
+	color:white;
+}

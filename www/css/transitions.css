@@ -1,0 +1,118 @@
+button.anim{
+	width:100px;
+	background-color:red;
+	color:white;
+	/* was passiert */
+	/* transition-property: background-color;	 */
+	/* Wie lange es dauert */
+	/* transition-duration: 3s; */
+	/* was passiert dabei */
+	/* transition-timing-function: ease-out; */
+	/* Verzögerung */
+	/* transition-delay:5s; */
+	transition: background-color 3s ease 5s;
+}
+button:hover{
+	background-color:blue;
+}
+
+/* Akkordeon */
+#akkordeon div{
+	width:300px;
+	height:50px;
+	border:1px solid black;
+	background-color:#b2ce8f;
+	transition: height 2s ease-in-out;
+	transition-timing-function: cubic-bezier(0.7,0.1,0.8,0.2);
+}
+#akkordeon div:hover{
+	height:150px;
+	background-color:#efd070;
+}
+
+/* Rakete */
+#homer img{
+	margin-top:0px;
+	transition: margin-top 2s;
+}
+#homer img:hover{
+	margin-top:-500px;
+}
+
+/* Ball */
+.ball{
+	background-color:gold;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	transition:transform 2s cubic-bezier(0.5,1.8,0.8,0.5);
+}
+.ballbump{
+	transform:translateX(200px);
+}
+
+/* Rotieren */
+div#rotieren:hover img{
+	transform:rotate(780deg) scale(0.5,0.5);
+	/* transition:5s; */
+}
+
+/* 3D Transform */
+#transform3d img{
+	transform: perspective(300px) rotateY(50deg);
+}
+
+/* Keyframe Animationen */
+
+/* Keyframe Regel */
+@keyframes hintergrund{
+	/* Eigenschaften am Anfang der Animation */
+	0%{
+		background-color:#f9086d;
+	}
+	25%{
+		background-color:#222222;
+	}
+	/* Eigenschaften in der Mitte der Animation */
+	50%{
+		background-color:#05e4d7;
+		border-radius:125px;
+	}
+	75%{
+		background-color:#222222;
+	}
+	/* Eigenschaften am Ende der Animation */
+	100%{
+		background-color:#f9086d;		
+	}
+}
+
+#rechteck{
+	width:250px;
+	height:250px;
+	/* background-color:red; */
+	/* animation-name: hintergrund;
+	animation-duration:5s;
+	animation-iteration-count:5; */
+	animation:hintergrund 5s infinite;
+}
+
+/* Homer bewegen*/
+@keyframes homer{
+	/* Anfang der Animation */
+	from{
+		transform:tranlateX(0);
+	}	
+	/* Ende der Animation */
+	to{
+		transform:translateX(300%);
+	}
+}
+
+#check:checked ~ #bewegen{
+	position:absolute;
+	animation-name:homer;
+	animation-duration:5s;
+	animation-delay:3s;
+	animation-fill-mode:forwards;
+}

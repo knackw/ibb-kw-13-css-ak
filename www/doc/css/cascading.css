@@ -1,0 +1,44 @@
+/* 1. je mehr Elementnamen aufgeführt werden, desto spezifischer die Angabe */
+/* div p{
+	color:red;
+}
+p{ 
+	color:green;
+} */
+
+/* 2. Attribute sind spezifischer als Elementnamen */
+/* p.absatz{ 
+	color:green;
+}
+div p{
+	color:red;
+} */
+
+/* 3. IDs haben höchste Spezifität */
+/* div#inhalt p{	 0102 
+	color:red;
+}
+p.absatz{ 		 0011 
+	color:green;
+} */
+/* ABCD
+	A 	style-Attribut
+	B 	Anzahl der IDs
+	C 	Anzahl der Klassen
+	D	Anzahl der Tags
+*/
+
+/* div#inhalt p{	 0102 
+	color:red;
+}
+div#inhalt p.absatz{ 		 0112 
+	color:green;
+} */
+p.absatz span#anfang{		/* 0112 */
+	color:red !important;
+	font-style:italic;
+}
+p#content span.farbe{		/* 0112 */
+	color:blue;
+	font-style:normal;
+}

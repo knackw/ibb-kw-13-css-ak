@@ -1,0 +1,113 @@
+/* Universal-Selektor */
+*{
+	box-sizing: border-box;
+}
+#page{
+	background-color:#ddd;
+	width:90%;
+	margin:10px auto;
+	/* overflow:auto; */
+}
+
+/* clearfix-Methode */
+.clearfix::after{
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+
+/* Kopfbereich */
+header{
+	background-color:#fae58f;
+	padding:10px;
+}
+
+/* Navigation */
+nav{
+	background-color:#fad4ab;
+	padding:10px;
+}
+
+/* Inhalt */
+main{
+	background-color:#e1f4a7;
+	padding:10px;
+}
+
+/* Sidebar */
+aside{
+	background-color:#d0a7d0;
+	padding:10px;
+}
+
+/* Fussbereich */
+footer{
+	background-color:#8fbacd;
+	padding:10px;
+}
+
+/* Media-Queries */
+/* Breite mindestens 900px */
+@media screen and (min-width : 900px){
+	body{
+		background-color:black;
+	}
+	/* Navigation */
+	nav{
+		width:30%;
+		float:left;		
+	}
+
+	/* Inhalt */
+	main{
+		float:left;
+		width:40%;		
+	}
+
+	/* Sidebar */
+	aside{
+		float:right;
+		width:30%;		
+	}
+
+	/* Fussbereich */
+	footer{
+		clear:both;	/* float aufheben */		
+	}
+}
+
+/* Breite zwischen 600px und 900px */
+@media screen and (min-width: 600px) and (max-width: 900px){
+	body{
+		background-color:red;
+	}
+		/* Navigation */
+	nav{
+		width:50%;
+		float:left;		
+	}
+
+	/* Inhalt */
+	main{
+		float:left;
+		width:50%;		
+	}
+
+	/* Sidebar */
+	aside{
+		clear:both;	/* float aufheben */	
+	}
+}
+
+/* Breite höchstens 600px */
+@media screen and (max-width: 600px){
+	body{
+		background-color:green;
+	}
+	/* Sidebar ausblenden */
+	aside{
+		display:none;
+	}
+}

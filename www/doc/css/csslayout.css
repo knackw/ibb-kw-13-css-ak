@@ -1,0 +1,26 @@
+#page{
+	background-color:#ddd;
+}
+
+/* Kopfbereich */
+header{
+	background-color:#fae58f;
+}
+
+/* Navigation */
+nav{
+	background-color:#fad4ab;
+	width:200px;
+	float:right;
+}
+
+/* Inhalt */
+main{
+	background-color:#e1f4a7;
+	margin-right:200px;
+}
+
+/* Fussbereich */
+footer{
+	background-color:#8fbacd;
+}

@@ -1,0 +1,35 @@
+/* Allgemein */
+body{
+   background-color: #fff;
+   color:#000;
+   font-family:serif;
+   font-size: 13pt;
+   text-align:justify;
+}
+/* URL einblenden */
+a::after{
+	content: " (" attr(href) ") ";
+}
+/* alle Images ausblenden */
+img{
+	display:none;
+}
+/* Logo einblenden */
+header img{
+	display:inline;
+}
+/* Navigation ausblenden */
+nav{
+	display:none;
+}
+/* Werbung ausblenden */
+aside{
+	display:none;
+}
+/* Adresse anzeigen */
+address{
+	border: 1px solid black;
+	border-top: 5px solid black;
+	display: box;
+	width:300px;
+}

@@ -1,0 +1,145 @@
+/* 
+Selektor{
+	CSS-Eigenschaft: Wert;
+}
+*/
+
+/* einfaches CSS-Reset */
+/* Universal-Selektor */
+*{
+	border:none;
+	margin:0;
+	padding:0;
+}
+/* vollständiges CSS-Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p{
+	color:gray;
+}
+
+/* Klassen-Selektor */
+p.zitat{
+	background-color:silver;
+}
+.kursiv{
+	font-style:italic;
+}
+
+/* ID-Selektor, eindeutig */
+#page{
+	margin:30px;
+}
+
+/* Nachfahre-Selektor */
+h1 em{
+	color:red;
+}
+p em{
+	color:blue;
+}
+
+ul li ul{
+	margin-left:20px;
+}
+#selektoren header{
+	background-color:maroon;
+}
+#produkt header{
+	background-color:olive;
+}
+
+/* Kind-Selektor */
+p > em{
+	font-weight:bold;
+}
+
+/* Nachbar-Selektor */
+h1 + p{
+	margin-left:20px;
+}
+
+/* Attribut-Selektor */
+input[type="text"]{
+	border-bottom:1px dotted gray;
+}
+input[type="submit"]{
+	border:1px solid gray;
+}
+a[href]{
+	font-weight:bold;
+}
+
+/* Pseudo-Klassen */
+a:visited{
+	color:orange;
+}
+a:link{
+	color:olive;
+}
+a:active{
+	color:yellow;
+}
+a:hover{
+	background-color:pink;
+}
+li:hover{
+	background-color:silver;
+}
+a:focus{
+	background-color:yellow;
+}
+p::first-letter{
+	font-size:30px;
+}
+
+tr:nth-of-type(2n+1){
+	background-color:silver;
+}

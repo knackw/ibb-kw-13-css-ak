@@ -1,0 +1,40 @@
+#page{
+	*background-color:#ddd;
+	position:relative;	/* absolut positioniertes Kindelement einfangen */
+}
+
+/* Kopfbereich */
+header{
+	*background-color:#fae58f;
+	height:50px;
+}
+
+/* Navigation */
+nav{
+	*background-color:#fad4ab;
+	position:absolute;
+	top:50px;
+	left:0px;
+	width:200px;
+}
+
+/* Inhalt */
+main{
+	*background-color:#e1f4a7;
+	margin-left:200px;
+	padding-top:1px;
+	margin-bottom:70px;
+	position:relative;
+	z-index:5;
+}
+
+/* Fussbereich */
+footer{
+	*background-color:#8fbacd;
+	position:absolute;
+	top:200px;
+	left:300px;
+	font-size:70px;
+	z-index:1;
+	color:#ddd;
+}
